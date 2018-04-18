@@ -1,0 +1,35 @@
+Question 1 
+
+* User Story: Is usually used in the Agile environment to capture a description 
+	      of a software feature from an end-user perspective.  The user stories
+		usually include type of user, what they want and why. 
+
+* Test Case: Is a set of conditions and or variables that a tester follows 
+		to check that requirements and functions are properly met. 
+		It can be seen as a set of step-by-step instructions to verify 
+		something behaves as it is required to behave.
+
+Question 2 
+
+I would suggest that the integration tests be done first, once all test cases pass,  
+move over to unit testing, here automated unit tests can be introduced into the cycle. 
+
+Question 3 
+
+Load Testing 
+Functionality Testing 
+Reliability Testing
+Explorative Testing 
+
+Question 4 
+
+From the begininning phases of the cycle.  The quicker they are involved in the process 
+the faster test strategies can be built and prepared for when the develoment phase is done. 
+
+This also helps a huge deal in the elimination of any area that could be unclear
+
+Question 5 
+
+For the practical case I would say 60 to 40, automation to manual 
+ 
+ 

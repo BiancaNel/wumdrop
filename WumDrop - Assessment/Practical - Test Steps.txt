@@ -1,0 +1,56 @@
+Question 4
+
+Step 1 
+Generated API key from IMDB 
+API Key generated: 
+http://www.omdbapi.com/?i=tt3896198&apikey=8cc9ebe5
+From this, 
+i = tt3896198
+api key  = 8cc9ebe5
+Movie returned: Guardians of the Galaxy Vol. 2
+
+Step 2 
+Analysed and stuctured API key as follows: 
+http://www.omdbapi.com/?i=[imdbId]&apikey=[userkey]
+
+Step 3
+Queried IMDB'S site for movie: Thor:Raknarok 
+Results returned movie's IMDB id: tt3501632
+
+Step 4 
+Replaced ID in API link 
+Structured as follows: 
+http://www.omdbapi.com/?i=tt3501632&apikey=8cc9ebe5
+All data for movie returned. 
+
+
+Question 5 
+
+Checked that API is reachable by checking status code == 200
+Checked that Id matched what was expected 
+
+
+pm.test("Status code is 200", function () {
+   
+pm.response.to.have.status(200);
+});
+
+
+
+pm.test("Header of ID exsists", function() {
+    
+pm.expect(pm.response.text()).to.include("imdbID");
+});
+    
+
+
+pm.test("Check if ID exsists", function() {
+    
+pm.expect(pm.response.text()).to.include("tt3501632");
+});
+
+
+
+
+
+
